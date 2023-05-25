@@ -8,10 +8,9 @@ digit = input ("Enter a number")
 
 print (digit)
 
-digit = digit.replace(",","")
-digit = digit.replace(".","")
+digit = digit.replace(",","").replace(".","")
 
 print (digit)
 
-res = sum(map(lambda x: int(x), digit))
+res = sum(map(lambda x: int(x), digit)) # Или так res = sum(map(int, digit))
 print (res)
